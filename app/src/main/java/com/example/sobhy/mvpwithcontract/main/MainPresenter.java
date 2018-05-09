@@ -12,4 +12,14 @@ public class MainPresenter implements MainContract.Presenter {
     public MainPresenter(MainContract.MVPview view) {
         this.view = view;
     }
+
+    @Override
+    public void HandleSignInButtonClick() {
+        view.ShowSignInScreen();
+    }
+
+    @Override
+    public void HandleSignOutButtonClick() {
+        view.ShowSignOutScreen();
+    }
 }
