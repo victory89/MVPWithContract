@@ -14,5 +14,16 @@ public class MainActivity extends AppCompatActivity implements MainContract.MVPv
         setContentView(R.layout.activity_main);
 
         presenter = new MainPresenter(this);
+      //  presenter.HandleSignOutButtonClick();
+    }
+//// View method ////
+    @Override
+    public void ShowSignInScreen() {
+
+    }
+
+    @Override
+    public void ShowSignOutScreen() {
+
     }
 }

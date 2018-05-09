@@ -8,10 +8,12 @@ public interface MainContract {
 
     interface MVPview
    {
-
+        void ShowSignInScreen();
+        void ShowSignOutScreen();
    }
      interface Presenter
     {
-
+        void HandleSignInButtonClick();
+        void HandleSignOutButtonClick();
     }
 }
